@@ -21,6 +21,15 @@ li {
     padding: 0 25px;
 }
 
-svg {
+a {
+    text-decoration: none;
+    color: rgb(217, 86, 38);
+}
+
+a:hover {
+    color: rgb(255, 151, 47);
+}
+
+.logosContainer svg {
     color: rgb(217, 86, 38);
 }

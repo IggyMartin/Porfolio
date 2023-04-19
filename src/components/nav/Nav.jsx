@@ -2,14 +2,15 @@ import React from "react";
 import styles from './nav.module.css'
 
 export default function Nav() {
+
     return (
         <div className={styles.container}>
             <h3>Ignacio Martin</h3>
             <ul>
-                <li>Intro</li>
-                <li>Profile</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#profile">Perfil</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
             <div className={styles.logosContainer}>
                 <a target="_blank" href="https://github.com/IggyMartin">
