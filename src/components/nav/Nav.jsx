@@ -6,7 +6,7 @@ export default function Nav() {
     return (
         <div className={styles.container}>
             <h3>Ignacio Martin</h3>
-            <ul>
+            <ul className={styles.ul}>
                 <li><a href="#intro">Intro</a></li>
                 <li><a href="#profile">Perfil</a></li>
                 <li><a href="#projects">Proyectos</a></li>

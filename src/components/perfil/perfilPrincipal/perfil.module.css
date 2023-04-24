@@ -1,0 +1,73 @@
+.profileContainer {
+    margin: 75px 60px 0 60px;
+}
+
+.profileContainer h3 {
+    font-size: 2em;
+    color: rgb(217, 86, 38);
+    margin-bottom: 30px;
+}
+
+.profileContainer p {
+    font-size: 1.5em;
+}
+
+.generalContainer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.first {
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgb(217, 86, 38, .7);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 77);
+}
+
+.first button {
+    all: unset;
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.first button:hover {
+    background-color: rgb(0, 0, 92);
+}
+
+.first button:focus {
+    background-color: rgb(0, 0, 113);
+}
+
+.first button:first-child {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 3px solid rgb(217, 86, 38, .7);
+}
+
+.first button:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.second {
+    width: 70%;
+    margin-left: 50px;
+    border: 3px solid rgb(217, 86, 38, .7);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(0, 0, 77);
+}
+
+.second p {
+    line-height: 30px;
+}
+
+.second > p {
+    margin-bottom: 20px;
+}
