@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styles from "./intro.module.css"
 import { useTypewriter } from "react-simple-typewriter"
 import pic from "../../egge.jpg"
@@ -14,6 +14,19 @@ import js from "../../assets/js.svg"
 import git from "../../assets/git.svg"
 
 export default function Intro() {
+
+    /* const [isIntersecting, setIsIntersecting] = useState(false);
+    const ref = useRef(null);
+  
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            setIsIntersecting(entry.isIntersecting);
+            console.log(entry);
+          }
+        );
+        observer.observe(ref.current);
+      }, [isIntersecting]); */
 
     let logos = [
         {svg: html,
@@ -44,7 +57,7 @@ export default function Intro() {
         })
 
     return (
-        <section  id="intro" className={styles.introContainer}>
+        <section id="intro" className={styles.introContainer}>
             <div>
                 <img className={styles.pic} src={pic} alt="profile picture"/>
             </div>

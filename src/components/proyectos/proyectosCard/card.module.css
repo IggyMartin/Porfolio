@@ -1,0 +1,43 @@
+.cardContainer {
+    width: 400px;
+    height: 550px;
+    border: 3px solid rgb(217, 86, 38, .7);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+.cardContainer:hover {
+    border: 3px solid rgb(217, 86, 38);
+    box-shadow: 0 0 25px rgb(217, 86, 38), 0 0 15px rgb(0, 0, 199);
+}
+
+.cardContainer h3 {
+    font-size: 1.5em;
+    color: rgb(217, 86, 38);
+}
+
+.pc {
+    max-width: 65%;
+}
+
+.cardContainer > p {
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 25px;
+}
+
+.logosContainer {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.webLink {
+    max-height: 100%;
+}

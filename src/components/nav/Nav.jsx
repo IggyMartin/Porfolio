@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import styles from './nav.module.css'
 
 export default function Nav() {
 
+    const navRef = useRef(null)
+
+    useEffect(()=>{
+        window.addEventListener('scroll',() => {
+          if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30){
+            navRef.current.classList.add(styles.navShadow)
+          }else{
+            navRef.current.classList.remove(styles.navShadow)
+          }
+        })
+        return()=>{
+          window.removeEventListener('scroll', null);
+        }      
+      },[]); 
+
     return (
-        <div className={styles.container}>
+        <div ref={navRef} className={styles.container}>
             <h3>Ignacio Martin</h3>
             <ul className={styles.ul}>
                 <li><a href="#intro">Intro</a></li>

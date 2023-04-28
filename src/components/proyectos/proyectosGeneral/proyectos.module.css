@@ -1,0 +1,20 @@
+.proyectosContainer {
+    margin: 75px 60px 0 60px;
+    padding-bottom: 30px;
+}
+
+.proyectosContainer > h3 {
+    font-size: 2em;
+    color: rgb(217, 86, 38);
+    padding-bottom: 30px;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dogApi {
+    text-decoration: none;
+    color: rgb(217, 86, 38);
+}
