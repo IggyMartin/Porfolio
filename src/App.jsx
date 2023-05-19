@@ -3,6 +3,8 @@ import Nav from './components/nav/Nav'
 import Intro from './components/intro/Intro'
 import Perfil from './components/perfil/perfilPrincipal/Perfil'
 import Proyectos from './components/proyectos/proyectosGeneral/Proyectos'
+import Contacto from './components/contacto/Contacto'
+import Footer from './components/footer/Footer'
 
 function App() {
 
@@ -12,6 +14,8 @@ function App() {
       <Intro/>
       <Perfil/>
       <Proyectos/>
+      <Contacto/>
+      <Footer/>
     </div>
   )
 }

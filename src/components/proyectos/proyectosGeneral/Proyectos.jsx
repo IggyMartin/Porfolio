@@ -28,7 +28,8 @@ const githubSVG = <svg xmlns="http://www.w3.org/2000/svg"
             descripcion: <>SPA realizada con la api <a className={styles.dogApi} target="_blank" href="https://thedogapi.com">thedogapi</a> para la renderización de razas de perro. Incluye barra de búsqueda, opciones de filtrado y ordenamiento, paginación, carta de detalle, y un formulario de creacion controlado con validaciones</>,
             githubSVG,
             websiteSVG,
-            githubLink: "https://github.com/IggyMartin/PI-Dogs"
+            githubLink: "https://github.com/IggyMartin/PI-Dogs",
+            websiteLink: "https://pi-dogs-front-production-b8aa.up.railway.app"
         }
     ]
 
@@ -39,7 +40,7 @@ const githubSVG = <svg xmlns="http://www.w3.org/2000/svg"
                 {
                     proyectos.map(p => {
                         return (
-                            <ProyectosCard key={p.nombre} img={p.img} nombre={p.nombre} descripcion={p.descripcion} githubSVG={githubSVG} websiteSVG={p.websiteSVG} githubLink={p.githubLink}/>
+                            <ProyectosCard key={p.nombre} img={p.img} nombre={p.nombre} descripcion={p.descripcion} githubSVG={githubSVG} websiteSVG={p.websiteSVG} githubLink={p.githubLink} websiteLink={p.websiteLink}/>
                         )
                     })
                 }

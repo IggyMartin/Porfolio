@@ -18,14 +18,24 @@ export default function Nav() {
         }      
       },[]); 
 
+      const handleClick = (e) => {
+        e.preventDefault()
+        let target = e.target.getAttribute('href')
+        let location = document.querySelector(target).offsetTop
+        window.scrollTo({
+            left: 0,
+            top: location - 100
+        })
+      }
+
     return (
         <div ref={navRef} className={styles.container}>
             <h3>Ignacio Martin</h3>
             <ul className={styles.ul}>
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#profile">Perfil</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#intro" onClick={handleClick}>Intro</a></li>
+                <li><a href="#profile" onClick={handleClick}>Perfil</a></li>
+                <li><a href="#projects" onClick={handleClick}>Proyectos</a></li>
+                <li><a href="#contact" onClick={handleClick}>Contacto</a></li>
             </ul>
             <div className={styles.logosContainer}>
                 <a target="_blank" href="https://github.com/IggyMartin">

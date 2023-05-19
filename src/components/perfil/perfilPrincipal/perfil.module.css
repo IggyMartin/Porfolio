@@ -66,8 +66,5 @@
 
 .second p {
     line-height: 30px;
-}
-
-.second > p {
     margin-bottom: 20px;
 }

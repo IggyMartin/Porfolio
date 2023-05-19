@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(0, 6, 63);
+}
+
 body #root {
   min-height: 100vh;
 }

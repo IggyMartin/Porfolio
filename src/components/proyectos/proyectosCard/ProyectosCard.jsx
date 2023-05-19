@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./card.module.css"
 
-export default function ProyectosCard({img, nombre, descripcion, githubSVG, websiteSVG, githubLink}) {
+export default function ProyectosCard({img, nombre, descripcion, githubSVG, websiteSVG, githubLink, websiteLink}) {
     return (
         <div className={styles.cardContainer}>
             <h3>{nombre}</h3>
@@ -11,7 +11,7 @@ export default function ProyectosCard({img, nombre, descripcion, githubSVG, webs
                 <a className={styles.webLink} target="_blank" href={githubLink}>{githubSVG}</a>
                 {
                     websiteSVG? (
-                        <a href={githubLink}><img className={styles.webLink} src={websiteSVG} alt={nombre}/></a>
+                        <a target="_blank" href={websiteLink}><img className={styles.webLink} src={websiteSVG} alt={nombre}/></a>
                     ) : null
                 }
             </div>
