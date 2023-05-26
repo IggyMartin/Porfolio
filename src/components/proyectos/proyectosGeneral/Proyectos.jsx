@@ -4,6 +4,7 @@ import ProyectosCard from "../proyectosCard/ProyectosCard";
 import monitorPorfolio from "../../../assets/monitorPorfolio.png"
 import monitorPIdogs from "../../../assets/monitorPIdogs.png"
 import websiteSVG from "../../../assets/website.svg"
+import HCOUTUREMonitor from "../../../assets/HCOUTUREMonitor.png"
 
 export default function Proyectos() {
 
@@ -30,7 +31,16 @@ const githubSVG = <svg xmlns="http://www.w3.org/2000/svg"
             websiteSVG,
             githubLink: "https://github.com/IggyMartin/PI-Dogs",
             websiteLink: "https://pi-dogs-front-production-b8aa.up.railway.app"
-        }
+        },
+        /* {
+            nombre: "HCOUTURE e-commerce",
+            img: HCOUTUREMonitor,
+            descripcion: "E-commerce",
+            githubSVG,
+            websiteSVG,
+            githubLink: "https://github.com/alexballen/pf-ecommerce-ft30b-backend",
+            websiteLink: "https://hcouture-38643.web.app/"
+        } */
     ]
 
     return (
